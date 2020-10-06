@@ -1,0 +1,12 @@
+# ARYAN SIDH B13 29
+#SEARCH FOR AN ELEMENT IN AN ARRAY BY CALLING FUNCTION
+def search(a,x): 
+    for i in range(len(a)):
+        if(a[i]==x):
+            return i
+    return 'not found'
+a=[12,24,36,48,60,72,84,96]
+x=int(input("enter the number to be searched:"))
+k=search(a,x)
+print("index of the entered number is:",k)
+
