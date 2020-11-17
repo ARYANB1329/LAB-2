@@ -1,0 +1,11 @@
+# ARYAN SIDDHABTHULA B13 29
+arr = list(map(int, input("Enter a multiple value: ").split()))
+
+for i in range(1,len(arr)):
+   min_= i
+   for j in range(len(arr)):
+      if arr[min_] < arr[j]:
+         min_ = j
+         arr[min_], arr[i] = arr[i], arr[min_]
+
+print(arr)
